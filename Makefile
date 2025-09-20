@@ -5,7 +5,7 @@ SHELL := /bin/bash
 
 tools:
 	@echo "Verificando dependencias..."
-	@command -v bats >/dev/null 2>&1 || { echo "Instala bats-core"; exit 1; }
+	@command -v bats >/dev/null 2>&1 || { echo "Instala bats-core. Revisar el README.md"; exit 1; }
 	@command -v curl >/dev/null 2>&1 || { echo "Instala curl"; exit 1; }
 	@command -v dig >/dev/null 2>&1 || { echo "Instala dig (bind-utils o dnsutils)"; exit 1; }
 	@echo "Dependencias OK"
