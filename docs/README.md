@@ -9,7 +9,15 @@ Este proyecto contiene:
 
 ```bash
 sudo yum update -y
-sudo yum install -y git make bind-utils
+sudo yum install -y git make
+```
+
+## Instalar bats para los tests
+```bash
+git clone https://github.com/bats-core/bats-core.git
+cd bats-core
+sudo ./install.sh /usr/local
+which bats
 ```
 
 ## Clonar repositorio
